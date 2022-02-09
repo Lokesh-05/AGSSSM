@@ -1,0 +1,135 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<br/>
+
+
+<h1>ENQUIRY FORM</h1>
+<h4>For more information, we request you to fill up the enquiry form and our team will reach out to you at the earliest.</h4>
+<div class="container">
+
+    <div class="row">
+
+        <div class="form-bg">
+
+            <form #studentForm="ngForm" (ngSubmit)="RegisterStudent(studentForm)">
+
+                <div class="panel panel-primary">
+
+                    <div class="panel-heading">
+
+                        <h3 class="text-body">Student Registration</h3>
+
+                    </div>
+
+                    <div class="panel-body">
+
+                        <div class="form-group">
+
+                            <label for="firstName">First Name</label>
+
+                            <input id="firstName" type="text" class="form-control"  name="firstName" ngModel>
+
+                        </div>
+                        <div class="form-group">
+
+                            <label for="lastName">Last Name</label>
+
+                            <input id="lastName" type="text" class="form-control" name="lastName" ngModel>
+
+                         </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="email">Email</label>
+
+                            <input id="email" type="text" class="form-control" name="email" ngModel>
+
+                        </div>
+                        <div class="form-group">
+
+                            <label>Gender</label>
+
+                            <div class="form-control">
+
+                                <label class="radio-inline">
+
+                                <input type="radio" name="gender" value="male" checked ngModel> Male
+
+                                </label>
+
+
+
+                                <label class="radio-inline">
+
+                                <input type="radio" name="gender" value="female" ngModel> Female
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="branch">Class</label>
+        
+                            <select id="branch" name="branch" spellcheck="true" ngModel class="form-control">
+        
+                                <option value="1" selected>1st Class</option>
+        
+                                <option value="2">2nd Class</option>
+        
+                                <option value="3">3rd Class</option>
+        
+                                <option value="4">4th Classs</option>
+        
+                                <option value="5">5th Class</option>
+        
+                            </select>
+        
+                        </div>
+                    
+                    <div class="form-group">
+
+                        <div class="form-control">
+
+                            <label class="checkbox-inline">
+
+                                <input type="checkbox" name="isAccept" ngModel>Accept Terms & Conditions
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="text-success">
+
+                    <p>{{res}}</p>
+                </div>
+                    
+
+
+                    <div class="panel-footer">
+
+                        <button class="btn btn-primary" type="submit">Submit</button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
